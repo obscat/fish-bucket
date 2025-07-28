@@ -1,0 +1,8 @@
+Fish:
+  fishname: "core-debian"
+  name: "Core Image for debian containers"
+  version: "1.0.0"
+
+startup:
+  default_port: 2565
+  default_ram: 1024
