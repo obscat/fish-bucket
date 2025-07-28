@@ -9,9 +9,7 @@ LABEL version="1.0.0"
 # INSTALL DEPS
 RUN apt update && apt upgrade && apt install -y \
   wget curl unzip bash git ca-certificates && \
-  useradd -m obscat && \
-  mkdir -p /home/obscat && \
-  chown -R obscat:obscat /home/obscat && \
+  useradd -d /home/obscat -m obscat \
   apt clean
 
 # Change Workdir
